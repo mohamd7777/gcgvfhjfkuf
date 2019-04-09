@@ -6,7 +6,7 @@ const ytdl = require('ytdl-core');
 const client = new Client({ disableEveryone: true});
 
 const youtube = new YouTube(config.GOOGLE_API_KEY);
-const PREFIX = config.prefix;
+const PREFIX = config.prefix1
 
 const queue = new Map();
 
@@ -31,7 +31,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
   } else if(newUserChannel === undefined){
 
     // User leaves a voice channel
-      if(oldMember.id === '518816831734022154'){
+      if(oldMember.id === '565288846225309697'){
           return console.log("BOT");
       }
       else{
